@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PM game page</title>
+    <style>
+      h1 {
+        color: rgb(39, 5, 5);
+      }
+      .main-page {
+        display: flex;
+        position: relative;
+      }
+      #game-photo {
+        background-image: url("https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D");
+        background-size: cover;
+        background-repeat: none;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      #game-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: aquamarine;
+        padding: 2rem;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        font-size: 2rem;
+      }
+      #game-btn:active {
+        background-color: aqua;
+      }
+      #quiz-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 100;
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(42, 21, 149);
+      }
+      fieldset {
+        margin-bottom: 3rem;
+        border: none;
+      }
+      #question1-container {
+        display: flex;
+      }
+      .result-1 {
+        display: flex;
+        flex-direction: column;
+      }
+      /* #submit-answers-btn-container-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+      #submit-answers-btn-1,
+      #submit-answers-btn-2,
+      #submit-answers-btn-3 {
+        background-color: rgb(100, 100, 181);
+        border-radius: 10px;
+        font-size: large;
+        text-align: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Let's play a wonderful game in the world of Project Management!!!</h1>
+    <section class="main-page">
+      <section id="game-photo"></section>
+
+      <button id="game-btn">Are you ready to get grilled?</button>
+    </section>
+
+    <!-- Quiz section where all the questions are displayed for the users -->
+    <section id="quiz-container" style="display: none">
+      <!-- Q1 -->
+      <form action="">
+        <div id="question1-container">
+          <fieldset id="question1">
+            <legend>1. What is a Project Charter?</legend>
+            <div>
+              <label for="1qa">A) A detailed budget report</label>
+              <input id="1qa" type="radio" name="PC" value="A" />
+            </div>
+            <div>
+              <label for="1qb"
+                >B) An official document that authorizes a project</label
+              >
+              <input id="1qb" type="radio" name="PC" value="B" />
+            </div>
+            <div>
+              <label for="1qc">C) A list of project team members</label>
+              <input id="1qc" type="radio" name="PC" value="C" />
+            </div>
+            <div>
+              <label for="1qd">D)A timeline of project activities</label>
+              <input id="1qd" type="radio" name="PC" value="D" />
+            </div>
+          </fieldset>
+          <div class="result-1">
+            <span id="correct-answer-result-1" style="display: none">
+              Bravo! You got it correct!
+            </span>
+            <span id="wrong-answer-result-1" style="display: none">
+              Incorrect. The correct answer is B) An official document that
+              authorizes a project. The Project Charter is crucial as it
+              outlines the project's purpose, objectives, and the authority of
+              the project manager. It's a key document in project initiation, as
+              outlined in the PMBOK Guide. Understanding the Project Charter is
+              essential for effective project management.
+            </span>
+          </div>
+        </div>
+        <div id="submit-answers-btn-container-1">
+          <button id="submit-answers-btn-1">Submit answers</button>
+        </div>
+
+        <!-- Q2 -->
+        <fieldset id="question2">
+          <legend>
+            2. Which of these is a key feature of Agile Project Management?
+          </legend>
+          <div>
+            <label for="2qa"
+              >A) Detailed planning at the beginning of the project</label
+            >
+            <input id="2qa" type="radio" name="APM" value="A" />
+          </div>
+          <div>
+            <label for="2qb">B) Flexibility and incremental progress</label>
+            <input id="2qb" type="radio" name="APM" value="B" />
+          </div>
+          <div>
+            <label for="2qc"
+              >C) Strict adherence to a fixed project scope</label
+            >
+            <input id="2qc" type="radio" name="APM" value="C" />
+          </div>
+          <div>
+            <label for="2qd">D) Emphasis on detailed documentation</label>
+            <input id="2qd" type="radio" name="APM" value="D" />
+          </div>
+        </fieldset>
+        <div class="result-2">
+          <span id="correct-answer-result-2" style="display: none">
+            Bravo! You got it correct!
+          </span>
+          <span id="wrong-answer-result-2" style="display: none">
+            Incorrect. The right answer is B) Flexibility and incremental
+            progress. Agile Project Management is characterized by its
+            adaptability to changing requirements and focuses on continuous
+            improvement, customer feedback, and delivering essential components
+            in short cycles. This approach contrasts with traditional methods
+            that involve extensive planning and rigid project scopes.
+            Understanding Agile's emphasis on flexibility and iterative progress
+            is crucial for modern project management practices.
+          </span>
+        </div>
+        <div id="submit-answers-btn-container-2">
+          <button id="submit-answers-btn-2">Submit answers</button>
+        </div>
+
+        <!-- Q3 -->
+        <fieldset id="question3">
+          <legend>
+            3. What does the term 'Scope Creep' refer to in project management?
+          </legend>
+          <div>
+            <label for="3qa"
+              >A) The increase in project scope without adjustments to time,
+              cost, and resources</label
+            >
+            <input id="3qa" type="radio" name="SC" value="A" />
+          </div>
+          <div>
+            <label for="3qb"
+              >B) The process of defining the project scope</label
+            >
+            <input id="3qb" type="radio" name="SC" value="B" />
+          </div>
+          <div>
+            <label for="3qc"
+              >C) Decreasing the project scope to meet deadlines</label
+            >
+            <input id="3qc" type="radio" name="SC" value="C" />
+          </div>
+          <div>
+            <label for="3qd"
+              >D) The technical specifications of a project</label
+            >
+            <input id="3qd" type="radio" name="SC" value="D" />
+          </div>
+        </fieldset>
+        <div class="result-3">
+          <span id="correct-answer-result-3" style="display: none">
+            Bravo! You got it correct!
+          </span>
+          <span id="wrong-answer-result-3" style="display: none">
+            Incorrect. The correct answer is A) The increase in project scope
+            without adjustments to time, cost, and resources. Scope Creep occurs
+            when new elements are added to a project without corresponding
+            increases in resources, time, or budget, leading to project overruns
+            and challenges in successful delivery. It often results from poor
+            project definition, lack of proper initial identification of what is
+            required to bring about the project objectives, or changes in
+            project scope without adjustment to time and cost. Managing scope
+            effectively is critical in project management to ensure project
+            success.
+          </span>
+        </div>
+        <div id="submit-answers-btn-container-3">
+          <button id="submit-answers-btn-3">Submit answers</button>
+        </div>
+      </form>
+      <section id="results"></section>
+    </section>
+    <script>
+      const gameBtn = document.querySelector("#game-btn");
+      gameBtn.addEventListener("click", function () {
+        document.getElementById("quiz-container").style.display = "flex";
+      });
+
+      const submitAnswersBtn1 = document.querySelector("#submit-answers-btn-1");
+      submitAnswersBtn1.addEventListener("click", function (event) {
+        event.preventDefault();
+        const answer1 = document.querySelector(
+          'input[name="PC"]:checked'
+        ).value;
+        const correctAnswerResult1 = document.getElementById(
+          "correct-answer-result-1"
+        );
+        const wrongAnswerResult1 = document.getElementById(
+          "wrong-answer-result-1"
+        );
+        if (answer1 === "B") {
+          correctAnswerResult1.style.display = "block";
+          wrongAnswerResult1.style.display = "none";
+        } else {
+          wrongAnswerResult1.style.display = "block";
+          correctAnswerResult1.style.display = "none";
+        }
+
+        const submitAnswersBtn2 = document.querySelector(
+          "#submit-answers-btn-2"
+        );
+        submitAnswersBtn2.addEventListener("click", function (event) {
+          event.preventDefault();
+          const answer2 = document.querySelector(
+            'input[name="APM"]:checked'
+          ).value;
+          const correctAnswerResult2 = document.getElementById(
+            "correct-answer-result-2"
+          );
+          const wrongAnswerResult2 = document.getElementById(
+            "wrong-answer-result-2"
+          );
+
+          if (answer2 === "B") {
+            correctAnswerResult2.style.display = "block";
+            wrongAnswerResult2.style.display = "none";
+          } else {
+            wrongAnswerResult2.style.display = "block";
+            correctAnswerResult2.style.display = "none";
+          }
+        });
+        const submitAnswersBtn3 = document.querySelector(
+          "#submit-answers-btn-3"
+        );
+        submitAnswersBtn3.addEventListener("click", function (event) {
+          event.preventDefault();
+          const answer3 = document.querySelector(
+            'input[name="SC"]:checked'
+          ).value;
+          const correctAnswerResult3 = document.getElementById(
+            "correct-answer-result-3"
+          );
+          const wrongAnswerResult3 = document.getElementById(
+            "wrong-answer-result-3"
+          );
+
+          if (answer3 === "A") {
+            // Assuming "A" is the correct answer for Question 3
+            correctAnswerResult3.style.display = "block";
+            wrongAnswerResult3.style.display = "none";
+          } else {
+            wrongAnswerResult3.style.display = "block";
+            correctAnswerResult3.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

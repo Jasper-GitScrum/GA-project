@@ -1,21 +1,21 @@
 function handleQuestion1() {
     const answer1 = document.querySelector('input[name="PC"]:checked').value;
-    const correctAnswerResult1 = document.getElementById("correct-answer-result-1");
-    const wrongAnswerResult1 = document.getElementById("wrong-answer-result-1");
+    const correctAnswerResult1 = document.querySelector("#correct-answer-result-1");
+    const wrongAnswerResult1 = document.querySelector("#wrong-answer-result-1");
     displayResult(answer1, "B", correctAnswerResult1, wrongAnswerResult1);
   }
   
   function handleQuestion2() {
     const answer2 = document.querySelector('input[name="APM"]:checked').value;
-    const correctAnswerResult2 = document.getElementById("correct-answer-result-2");
-    const wrongAnswerResult2 = document.getElementById("wrong-answer-result-2");
+    const correctAnswerResult2 = document.querySelector("#correct-answer-result-2");
+    const wrongAnswerResult2 = document.querySelector("#wrong-answer-result-2");
     displayResult(answer2, "B", correctAnswerResult2, wrongAnswerResult2); 
   }
   
   function handleQuestion3() {
     const answer3 = document.querySelector('input[name="SC"]:checked').value;
-    const correctAnswerResult3 = document.getElementById("correct-answer-result-3");
-    const wrongAnswerResult3 = document.getElementById("wrong-answer-result-3");
+    const correctAnswerResult3 = document.querySelector("#correct-answer-result-3");
+    const wrongAnswerResult3 = document.querySelector("#wrong-answer-result-3");
     displayResult(answer3, "A", correctAnswerResult3, wrongAnswerResult3); 
   }
   
@@ -31,7 +31,7 @@ function handleQuestion1() {
   
 const gameBtn = document.querySelector("#game-btn");
 gameBtn.addEventListener("click", function () {
-  document.getElementById("quiz-container").style.display = "flex";
+  document.querySelector("#quiz-container").style.display = "flex";
 });
 
 const submitAnswersBtn1 = document.querySelector("#submit-answers-btn-1");

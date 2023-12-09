@@ -47,17 +47,16 @@ body{
 }
 .initial-landing {
     background-image: url("https://images.unsplash.com/photo-1572177812156-58036aae439c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvamVjdCUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D");
-    height: 100vh; 
+    /* height: 100vh;  */
     width: 100%; 
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+    /* position: relative; */
     padding-bottom: 10rem;
 }
 .overlay {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -205,11 +204,11 @@ footer {
     }
     .image-gallery{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         margin-bottom: 4rem;
     }
     .ka-intro-section {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 2rem;
     }
 }

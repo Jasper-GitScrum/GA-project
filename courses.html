@@ -20,84 +20,47 @@
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
-    <style>
-      body {
-        background-color: rgb(160, 160, 242);
-      }
-      #carouselExample {
-        max-width: 1000px; /* Adjust the max width as needed */
-        margin: auto; /* This will center the carousel if it's smaller than the parent container */
-      }
-
-      .carousel-item img {
-        width: 100%; /* Adjusts the width of the image */
-        height: auto; /* Adjusts the height automatically based on the width */
-        object-fit: cover; /* This ensures that the aspect ratio is maintained without stretching the image */
-      }
-    </style>
+    <link rel="stylesheet" href="courses-style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search Knoledge Area"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
+    <header>
+      <!-- header of the landing page -->
+      <nav class="nav-left">
+        <ul class="nav-left-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+          <li>Professional Dev</li>
+          <li>PMBOK</li>
+          <li>
+            <a href="game.html">Quiz</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav-right">
+        <ul class="nav-right-list">
+          <li>Sign Up</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+    </header>
+
+    <select
+      class="form-select form-select-lg mb-3"
+      aria-label="Large select example"
+    >
+      <option selected>What do you want to learn today?</option>
+      <option value="1">Stakeholder Management</option>
+      <option value="2">Communication Management</option>
+      <option value="3">Human Resource Management</option>
+    </select>
+
+    <h2 class="section-title">
+      Did You Know? The Demand for PMP Jobs is Increasing by 20% Every Year!
+    </h2>
 
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -142,5 +105,96 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <section class="start-btn-container">
+      <a class="start-btn" href="#stakeholder-course"
+        >Start your course journey</a
+      >
+    </section>
+
+    <section class="people-course">
+      <section id="stakeholder-course" class="stakeholder-course">
+        <img
+          src="https://media.istockphoto.com/id/1157005798/photo/the-word-stakeholder-wooden-cubes.jpg?s=2048x2048&w=is&k=20&c=bDJECaRC7-MZDxb_KCmrX9S2DiQE3bBDQuIXmNefNVQ="
+          alt="Stakeholder Management"
+          class="stakeholder-img"
+        />
+        <article class="stakeholder-text">
+          <p>
+            <h4 class="call-out">STAKEHOLDER MANAGEMENT</h4> is key in project management. It involves:
+          </p>
+          <ul>
+            <li>Identifying and analyzing stakeholder needs.</li>
+            <li>Building strong relationships with stakeholders.</li>
+            <li>Effectively communicating project goals and updates.</li>
+          </ul>
+          <p>
+            Mastering these skills can significantly boost your career in
+            project management.
+          </p>
+        </article>
+      </section>
+
+      <section id="communication-course" class="communication-course">
+        <article class="communication-text">
+          <p>
+            <h4 class="call-out">COMMUNICATION MANAGEMENT</h4> is a vital aspect of project management,
+            focusing on:
+          </p>
+          <ul>
+            <li>
+              Ensuring clear and effective communication among project
+              stakeholders.
+            </li>
+            <li>
+              Developing a communication plan that outlines how information will
+              be shared.
+            </li>
+            <li>
+              Utilizing tools and techniques for efficient information
+              distribution.
+            </li>
+          </ul>
+          <p>
+            Effective communication management enhances project transparency and
+            stakeholder trust, contributing significantly to project success.
+          </p>
+        </article>
+        <img
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29tbXVuaWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Communication Management"
+          class="communication-img"
+        />
+      </section>
+      <section id="human-resource-course" class="human-resource-course">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1679936310761-023234ac7029?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SFJ8ZW58MHx8MHx8fDA%3D"
+          alt="Human Resource Management"
+          class="human-resource-img"
+        />
+        <article class="human-resource-text">
+          <p>
+            <h4 class="call-out">HUMAN RESOURCE MANAGEMENT</h4>
+             is crucial in project management, focusing
+            on:
+          </p>
+          <ul>
+            <li>Developing and managing project teams effectively.</li>
+            <li>
+              Identifying, assigning, and managing project roles and
+              responsibilities.
+            </li>
+            <li>
+              Addressing and resolving team conflicts and promoting
+              collaboration.
+            </li>
+          </ul>
+          <p>
+            Skilled human resource management drives team efficiency and project
+            success by optimizing the use of human talents and skills.
+          </p>
+        </article>
+      </section>
+    </section>
   </body>
 </html>

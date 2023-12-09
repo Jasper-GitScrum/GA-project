@@ -25,43 +25,58 @@
     <script defer src="game-script.js"></script>
   </head>
   <body>
+    <header>
+      <nav class="nav-left">
+        <ul class="nav-left-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li>Professional Dev</li>
+          <li>PMBOK</li>
+          <li><a href="game.html">Quiz</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-right">
+        <ul class="nav-right-list">
+          <li>Sign Up</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+    </header>
+
     <h1>Let's play a wonderful game in the world of Project Management!!!</h1>
     <section class="main-page">
       <section id="game-photo"></section>
-
       <button id="game-btn">Are you ready to get grilled?</button>
     </section>
 
-    <!-- Quiz section where all the questions are displayed for the users -->
-    <section id="quiz-container" style="display: none">
-      <!-- Q1 -->
+    <section id="quiz-container" class="quiz-container" style="display: none">
       <form action="">
-        <div id="question1-container">
+        <section id="question1-container">
           <fieldset id="question1">
             <legend>1. What is a Project Charter?</legend>
-            <div>
+            <section>
               <label for="1qa">A) A detailed budget report</label>
               <input id="1qa" type="radio" name="PC" value="A" />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="1qb"
                 >B) An official document that authorizes a project</label
               >
               <input id="1qb" type="radio" name="PC" value="B" />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="1qc">C) A list of project team members</label>
               <input id="1qc" type="radio" name="PC" value="C" />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="1qd">D)A timeline of project activities</label>
               <input id="1qd" type="radio" name="PC" value="D" />
-            </div>
+            </section>
           </fieldset>
-          <div class="result-1">
-            <span id="correct-answer-result-1" style="display: none">
-              Bravo! You got it correct!
-            </span>
+          <section class="result-1">
+            <span id="correct-answer-result-1" style="display: none"
+              >Bravo! You got it correct!</span
+            >
             <span id="wrong-answer-result-1" style="display: none">
               Incorrect. The correct answer is B) An official document that
               authorizes a project. The Project Charter is crucial as it
@@ -70,43 +85,42 @@
               outlined in the PMBOK Guide. Understanding the Project Charter is
               essential for effective project management.
             </span>
-          </div>
-        </div>
-        <div id="submit-answers-btn-container-1">
+          </section>
+        </section>
+        <section id="submit-answers-btn-container-1">
           <button id="submit-answers-btn-1">Submit answers</button>
-        </div>
+        </section>
 
-        <!-- Q2 -->
-        <div id="question2-container">
+        <section id="question2-container">
           <fieldset id="question2">
             <legend>
               2. Which of these is a key feature of Agile Project Management?
             </legend>
-            <div>
+            <section>
               <label for="2qa"
                 >A) Detailed planning at the beginning of the project</label
               >
               <input id="2qa" type="radio" name="APM" value="A" />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="2qb">B) Flexibility and incremental progress</label>
               <input id="2qb" type="radio" name="APM" value="B" />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="2qc"
                 >C) Strict adherence to a fixed project scope</label
               >
               <input id="2qc" type="radio" name="APM" value="C" />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="2qd">D) Emphasis on detailed documentation</label>
               <input id="2qd" type="radio" name="APM" value="D" />
-            </div>
+            </section>
           </fieldset>
-          <div class="result-2">
-            <span id="correct-answer-result-2" style="display: none">
-              Bravo! You got it correct!
-            </span>
+          <section class="result-2">
+            <span id="correct-answer-result-2" style="display: none"
+              >Bravo! You got it correct!</span
+            >
             <span id="wrong-answer-result-2" style="display: none">
               Incorrect. The right answer is B) Flexibility and incremental
               progress. Agile Project Management is characterized by its
@@ -118,49 +132,48 @@
               iterative progress is crucial for modern project management
               practices.
             </span>
-          </div>
-        </div>
-        <div id="submit-answers-btn-container-2">
+          </section>
+        </section>
+        <section id="submit-answers-btn-container-2">
           <button id="submit-answers-btn-2">Submit answers</button>
-        </div>
+        </section>
 
-        <!-- Q3 -->
-        <div id="question3-container">
+        <section id="question3-container">
           <fieldset id="question3">
             <legend>
               3. What does the term 'Scope Creep' refer to in project
               management?
             </legend>
-            <div>
+            <section>
               <label for="3qa"
                 >A) The increase in project scope without adjustments to time,
                 cost, and resources</label
               >
               <input id="3qa" type="radio" name="SC" value="A" />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="3qb"
                 >B) The process of defining the project scope</label
               >
               <input id="3qb" type="radio" name="SC" value="B" />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="3qc"
                 >C) Decreasing the project scope to meet deadlines</label
               >
               <input id="3qc" type="radio" name="SC" value="C" />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="3qd"
                 >D) The technical specifications of a project</label
               >
               <input id="3qd" type="radio" name="SC" value="D" />
-            </div>
+            </section>
           </fieldset>
-          <div class="result-3">
-            <span id="correct-answer-result-3" style="display: none">
-              Bravo! You got it correct!
-            </span>
+          <section class="result-3">
+            <span id="correct-answer-result-3" style="display: none"
+              >Bravo! You got it correct!</span
+            >
             <span id="wrong-answer-result-3" style="display: none">
               Incorrect. The correct answer is A) The increase in project scope
               without adjustments to time, cost, and resources. Scope Creep
@@ -173,13 +186,19 @@
               and cost. Managing scope effectively is critical in project
               management to ensure project success.
             </span>
-          </div>
-        </div>
-        <div id="submit-answers-btn-container-3">
+          </section>
+        </section>
+        <section id="submit-answers-btn-container-3">
           <button id="submit-answers-btn-3">Submit answers</button>
-        </div>
+        </section>
       </form>
       <section id="results"></section>
+      <section class="finished-btns-container">
+        <button type="button" id="finished-btn" class="btn btn-danger">
+          I have finished all the quizzes!
+        </button>
+        <a href="index.html">Go back to the Home page</a>
+      </section>
     </section>
   </body>
 </html>

@@ -1,59 +1,219 @@
-header{
+html {
+    scroll-behavior: smooth;
+}
+header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    font-size: 2rem;
+    background-color: grey;
+    padding: 1rem 2rem; 
+  }
+  
+header a {
+text-decoration: none;
+color: black;
 }
-ul{
-    list-style-type: none;
-    display: flex;
 
+header ul {
+list-style-type: none;
+display: flex;
+align-items: center;
 }
-li{
-    margin-right: 4rem;
+
+header li {
+margin-right: 2rem; 
 }
 .heading-of-all{
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
 }
 body{
-    background-color: rgb(160, 160, 242);
+    background-color: white;
 }
-.logo{
-    max-width: 5rem;
+.logo {
+    max-width: 8rem;
 }
-.heading-of-all-name{
+.heading-of-all-name {
     margin-left: 10rem;
+}
+.initial-landing {
+    background-image: url("https://images.unsplash.com/photo-1572177812156-58036aae439c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvamVjdCUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D");
+    height: 1400px; 
+    width: 100%; 
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding-bottom: 10rem;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    color: white;
+}
+h2 {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    ;
 }
 .para-first, .para-second{
     margin-bottom: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
 }
 .image-gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4rem;
-    grid-auto-rows: 400px;
       
 }
 .image-gallery img{
     height: 400px;
-
     object-fit: cover;
+}
+.image-gallery img:hover {
+    transform: scale(1.05);
 }
 .project-pic, .sticky-notes, .team-work{
     width: 100%;
     height: auto;
 }
+.get-started-btn-container {
+    text-align: center;
+    padding-top: 4rem;
+}
+.get-started-btn {
+    display: inline-block;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(31, 31, 96); 
+}
+.next-section {
+    padding-top: 4rem;
+}
+.ka-intro-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+    padding: 4rem;
+}
+.ka-intro-section img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+.knowledge-areas h3 {
+    text-align: center;
+    padding: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.stakeholder-mgt, .communication-mgt, .HR-mgt, .Scope-management, .budget-mgt, .Schedule-mgt, .DA, .scrum, .EA{
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden; 
+}
+.stakeholder-mgt:hover, 
+.communication-mgt:hover, 
+.HR-mgt:hover, 
+.Scope-management:hover, 
+.budget-mgt:hover, 
+.Schedule-mgt:hover, 
+.DA:hover, 
+.scrum:hover, 
+.EA:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f0f0f0;
+}
+
+.footer-bottom {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.footer-section.socials a {
+    color: white;
+    margin: 0 10;
+}
+
+/* Responsive Designs */
 @media (max-width: 768px) {
-    .image-gallery{
-        display: grid;
+    /* .initial-landing {
+        height: auto; 
+        padding-bottom: 40px;
+    } */
+    /* .get-started-btn-container {
+        bottom: 10px; 
+        left: 50%;
+        transform: translateX(-50%);
+    } */
+    .ka-intro-section {
         grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
     }
 }
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     .image-gallery{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 4rem;
+    }
+    .ka-intro-section {
+        grid-template-columns: 1fr;
+        padding: 1rem;
     }
 }

@@ -1,12 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    padding: 1rem 2rem; 
+  }
+  
+header a {
+text-decoration: none;
+color: black;
+}
+
+header ul {
+list-style-type: none;
+display: flex;
+align-items: center;
+}
+
+header li {
+margin-right: 2rem; 
+}
+
+li{
+    margin-right: 4rem;
+}
+.quiz-container{
+    padding: 4rem;
+}
 h1 {
-    color: rgb(39, 5, 5);
+    color: #007bff;
+    margin: 5rem;
+    font-weight: bold;
 }
 .main-page {
     display: flex;
     position: relative;
 }
 #game-photo {
-    background-image: url("https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGVkdWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D");
     background-size: cover;
     background-repeat: none;
     background-position: center;
@@ -17,12 +47,20 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: aquamarine;
+    background-color: #007bff;
     padding: 2rem;
     border-radius: 10px;
     transform: translate(-50%, -50%);
     cursor: pointer;
     font-size: 2rem;
+
+    /* display: inline-block;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(31, 31, 96);  */
 }
 #game-btn:active {
     background-color: aqua;
@@ -50,7 +88,7 @@ fieldset {
     border: none;
 }
 legend {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 #question1-container, #question2-container, #question3-container{
     display: flex;
@@ -59,11 +97,11 @@ legend {
 .result-1, .result-2, .result-3{
     display: flex;
     flex-direction: column;
-    color: rgb(255, 0, 204);
+    color: #007bff;
 }
 #question1, #question2, #question3{
     width: 100%;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 #submit-answers-btn-1,
@@ -74,6 +112,17 @@ legend {
     font-size: large;
     text-align: center;
     cursor: pointer;
+}
+.finished-btns-container {
+    margin-top: 2rem;
+    display: flex!; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#finished-btn {
+    margin-right: 2rem;
+    font-size: 2rem;
 }
 @media (max-width: 430px) {
     #question1-container, #question2-container, #question3-container{

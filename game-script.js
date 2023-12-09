@@ -51,4 +51,8 @@ submitAnswersBtn3.addEventListener("click", function (event) {
   event.preventDefault();
   handleQuestion3();
 });
+const finishedBtn = document.querySelector("#finished-btn")
+finishedBtn.addEventListener("click", function(){
+  alert ("Well done! I am so proud of you. You have taken the first step in your Project Management career. I look forward to seeing you in more courses and quizzes soon.")
+})
 

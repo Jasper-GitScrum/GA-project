@@ -1,0 +1,172 @@
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    padding: 1rem 2rem; 
+  }
+  
+header a {
+text-decoration: none;
+color: black;
+}
+
+header ul {
+list-style-type: none;
+display: flex;
+align-items: center;
+}
+
+header li {
+margin-right: 2rem; 
+}
+
+/* Section Title Style */
+.section-title {
+text-align: center;
+margin: 2rem 0;
+color: #007bff; 
+}
+
+/* Carousel Styles */
+#carouselExample {
+max-width: 1000px;
+margin: auto;
+margin-top: 2rem;
+}
+
+.carousel-item img {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.start-btn-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.start-btn {
+    display: inline-block; 
+    margin: 2rem auto;
+    padding: 0.5rem 1rem; 
+    background-color: #007bff; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    font-size: 1rem; 
+}
+
+/* Stakeholder Section Styles */
+.people-course {
+margin: 16rem 0;
+}
+.call-out {
+    display: inline;
+    font-weight: bold; 
+    font-size: 1.5em; 
+    color: #007bff; 
+}
+
+.stakeholder-course {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2rem; 
+}
+
+.stakeholder-img {
+max-width: 100%;
+max-height: 300px; 
+border-radius: 8px;
+object-fit: cover;
+}
+
+.stakeholder-text {
+max-width: 600px; 
+}
+
+.stakeholder-text p {
+margin-bottom: 1rem;
+line-height: 1.5; 
+}
+
+.stakeholder-text ul {
+list-style-type: disc;
+margin-left: 20px; 
+}
+
+.stakeholder-text ul li {
+margin-bottom: 0.5rem;
+}
+
+/* Communication Course Section Styles */
+.communication-course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 8rem 0;
+}
+
+.communication-img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.communication-text {
+    max-width: 600px;
+}
+
+.communication-text p, .communication-text ul {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.communication-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Human Resource Course Section Styles */
+.human-resource-course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 8rem 0;
+}
+
+.human-resource-img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.human-resource-text {
+    max-width: 600px;
+}
+
+.human-resource-text p, .human-resource-text ul {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.human-resource-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .stakeholder-course, .communication-course, .human-resource-course{
+        display: flex;
+        flex-direction: column;
+    }
+}

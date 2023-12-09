@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,7 +28,9 @@
       <!-- header of the landing page -->
       <nav class="nav-left">
         <ul class="nav-left-list">
-          <li>Home</li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
           <li>
             <a href="courses.html">Courses</a>
           </li>
@@ -48,23 +51,113 @@
     
     <main>
       <section class="heading-of-all">
-        <img class="logo"src="logo.png" alt="logo" />
+        <img class="logo"src="logoV2.png" alt="">
         <h1 class="heading-of-all-name">
           Mastering Project Management: The Ultimate Course
         </h1>
       </section>
-      <section>
-        <h2>Project Management Fundamentals</h2>
-        <p class="para-first">Learn the fundamentals of Project Management including but not limited to 10 knowledge areas, software design, Agile practice, Vtesting methods and DevSecOps process and practice.</p>
-        <form action=""></form>
-        <p class="para-second">
-          Embark on "Mastering Project Management: The Ultimate Course," your gateway to mastering the universal language of project delivery. This premier program transcends industry boundaries, promising a treasure trove of opportunities in the booming job market. Crafted for aspirants from IT to construction, healthcare to finance, it's the key to unlocking leadership roles and top-tier project successes. With the added edge of AI-powered tutors providing personalized guidance, this course is not just an education—it's a transformation. Step forward to harness the power of project management and shape the future, one project at a time. Your potential is our priority. Let's lead the charge together.
-        </p>
-        <section class="image-gallery">
-          <img class="project-pic"src="https://images.unsplash.com/photo-1572177812156-58036aae439c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvamVjdCUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D" alt="project-pic">
-          <img class="sticky-notes"src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvamVjdCUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D" alt="sticky-notes">
-          <img class="team-work"src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2plY3QlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww" alt="team-work">
+
+      <section class="initial-landing">
+        <section class="overlay">
+          <h2>Project Management Fundamentals</h2>
+          <p class="para-first">Learn the fundamentals of Project Management including but not limited to 10 knowledge areas, software design, Agile practice, Vtesting methods and DevSecOps process and practice.</p>
+          <form action=""></form>
+          <p class="para-second">
+            Embark on "Mastering Project Management: The Ultimate Course," your gateway to mastering the universal language of project delivery. This premier program transcends industry boundaries, promising a treasure trove of opportunities in the booming job market. Crafted for aspirants from IT to construction, healthcare to finance, it's the key to unlocking leadership roles and top-tier project successes. With the added edge of AI-powered tutors providing personalized guidance, this course is not just an education—it's a transformation. Step forward to harness the power of project management and shape the future, one project at a time. Your potential is our priority. Let's lead the charge together.
+          </p>
+          <section class="image-gallery">
+            <img class="project-pic"src="https://images.unsplash.com/photo-1572177812156-58036aae439c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvamVjdCUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D" alt="project-pic">
+            <img class="sticky-notes"src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvamVjdCUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D" alt="sticky-notes">
+            <img class="team-work"src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2plY3QlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww" alt="team-work">
+          </section>
+
+          <article class="get-started-btn-container">
+            <a href="#next-section" class="get-started-btn">GET STARTED</a>
+          </article>
         </section>
       </section>
+      
+      <section id="next-section" class="next-section">
+        <article id="knowledge-areas" class="knowledge-areas">
+          <h3>Knowledge areas in PM</h3>
+          <section class="ka-intro-section">
+              <section class="stakeholder-mgt">
+                  <h4 class="heading">STAKEHOLDER MANAGEMENT</h4>
+                  <img class="ka-img" src="icons/web-outline-icons-admin-panel.png" alt="Stakeholder Img">
+                  <article class="intro">Identifying, engaging, and satisfying project stakeholders.</article>
+              </section>
+              <section class="communication-mgt">
+                  <h4>COMMUNICATION MANAGEMENT</h4>
+                  <img class="ka-img" src="icons/web-outline-icons-bage-builder.png" alt="Communication Img">
+                  <article class="intro">Efficiently exchanging project information.</article>
+              </section>
+              <section class="HR-mgt">
+                  <h4 class="heading">HUMAN RESOURCE MANAGEMENT</h4>
+                  <img class="ka-img" src="icons/web-outline-icons-customization.png" alt="HR-img">
+                  <article class="intro">Managing, developing, and allocating personnel.</article>  
+              </section>
+              <section class="Scope-management">
+                  <h4 class="heading">SCOPE MANAGEMENT</h4>
+                  <img src="icons/web-outline-icons-development.png" alt="scope-img">
+                  <article class="intro">Defining and controlling project boundaries.</article> 
+              </section>
+              <section class="budget-mgt">
+                  <h4 class="heading">BUDGET MANAGEMENT</h4>
+                  <img src="icons/web-outline-icons-eshop.png" alt="budget-img">
+                  <article class="intro">Estimating, budgeting, and controlling expenses.</article>
+              </section>
+              <section class="Schedule-mgt">
+                  <h4 class="heading">SCHEDULE MANAGEMENT</h4>
+                  <img src="icons/web-outline-icons-feature-request.png" alt="schedule-img">
+                  <article class="intro">Planning, setting, and tracking timelines.</article>
+              </section>
+              <section class="DA">
+                  <h4 class="heading">DISCIPLINED AGILE</h4>
+                  <img class="ka-img" src="icons/web-outline-icons-server.png" alt="DA-img">
+                  <article class="intro">Flexible, scalable, and comprehensive Agile framework.</article>
+              </section>
+              <section class="scrum">
+                  <h4 class="heading">SCRUM</h4>
+                  <img class="ka-img" src="icons/web-outline-icons-support.png" alt="scrum-img">
+                  <article class="intro">Iterative, team-based Agile methodology.</article>
+              </section>
+              <section class="EA">
+                  <h4 class="heading">ENTERPRISE ARCHITECTURE</h4>
+                  <img class="ka-img" src="icons/web-outline-icons-updates.png" alt="EA-img">
+                  <article class="intro">Strategic planning of business processes and IT infrastructure.</article>
+              </section>
+          </section>
+      </article>      
+      </section>
+          </section>
+        </article>
+      </section>
     </main>
+
+    <footer>
+      <section class="footer-content">
+          <section class="footer-section about">
+              <h3>About Us</h3>
+              <p>We are a team dedicated to delivering the best project management learning resources.</p>
+          </section>
+          <section class="footer-section links">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="https://example.com/home">Home</a></li>
+                  <li><a href="https://example.com/courses">Courses</a></li>
+                  <li><a href="https://example.com/contact">Contact</a></li>
+              </ul>
+          </section>
+          <section class="footer-section socials">
+              <h3>Follow us</h3>
+              <a href="https://facebook.com/yourprofile"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin-in"></i></a>
+          </section>
+      </section>
+      <section class="footer-bottom">
+          &copy; Jasper-projectmanagement.com | All Rights Reserved
+      </section>
+  </footer>
+  
 </html>
